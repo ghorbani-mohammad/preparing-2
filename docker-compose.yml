@@ -30,3 +30,6 @@ services:
       - .:/app
     env_file:
       - .env
+  prepare_2_rabbitmq:
+    container_name: prepare_2_rabbitmq
+    image: rabbitmq:3.10.6-alpine
