@@ -5,7 +5,6 @@ services:
     command: ['python', '/app/crawler/manage.py', 'runserver', '0:80']
     volumes:
       - .:/app
-    restart: unless-stopped
     env_file:
       - .env
 
@@ -30,6 +29,7 @@ services:
       - .:/app
     env_file:
       - .env
+
   prepare_2_rabbitmq:
     container_name: prepare_2_rabbitmq
     image: rabbitmq:3.10.6-alpine
