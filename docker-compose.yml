@@ -29,6 +29,9 @@ services:
       - .:/app
     env_file:
       - .env
+    depends_on:
+      - prepare_2_rabbitmq
+    restart: unless-stopped
 
   prepare_2_rabbitmq:
     container_name: prepare_2_rabbitmq
