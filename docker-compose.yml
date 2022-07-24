@@ -2,7 +2,7 @@ services:
   prepare_2_django:
     container_name: prepare_2_django
     build: .
-    command: ['python', '/app/crawler/manage.py', 'runserver', '0:80']
+    command: ['python', '/app/prepare2/manage.py', 'runserver', '0:80']
     volumes:
       - .:/app
     env_file:
@@ -15,7 +15,7 @@ services:
   prepare_2_beat:
     container_name: prepare_2_beat
     build: .
-    command: ['sh', '-c', 'cd /app/crawler && celery -A crawler beat -l error']
+    command: ['sh', '-c', 'cd /app/prepare2 && celery -A crawler beat -l error']
     volumes:
       - .:/app
     env_file:
@@ -24,7 +24,7 @@ services:
   prepare_2_worker:
     container_name: prepare_2_worker
     build: .
-    command: ['sh', '-c', 'cd /app/crawler && celery -A crawler worker -l error']
+    command: ['sh', '-c', 'cd /app/prepare2 && celery -A crawler worker -l error']
     volumes:
       - .:/app
     env_file:
