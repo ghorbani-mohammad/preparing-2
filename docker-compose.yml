@@ -1,0 +1,32 @@
+services:
+  prepare_2_django:
+    container_name: prepare_2_django
+    build: .
+    command: ['python', '/app/crawler/manage.py', 'runserver', '0:80']
+    volumes:
+      - .:/app
+    restart: unless-stopped
+    env_file:
+      - .env
+
+  prepare_2_redis:
+    container_name: prepare_2_redis
+    image: redis:7.0.4-alpine
+  
+  prepare_2_beat:
+    container_name: prepare_2_beat
+    build: .
+    command: ['sh', '-c', 'cd /app/crawler && celery -A crawler beat -l error']
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+
+  prepare_2_worker:
+    container_name: prepare_2_worker
+    build: .
+    command: ['sh', '-c', 'cd /app/crawler && celery -A crawler worker -l error']
+    volumes:
+      - .:/app
+    env_file:
+      - .env
