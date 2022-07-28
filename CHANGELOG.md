@@ -1,4 +1,13 @@
-# 0.1.0 (2022-07-27)
+## [0.1.1](https://github.com/ghorbani-mohammad/preparing-2/compare/v0.1.0...v0.1.1) (2022-07-28)
+
+
+### Bug Fixes
+
+* remove test app from INSTALLED_APPS ([752eabf](https://github.com/ghorbani-mohammad/preparing-2/commit/752eabf7f96411db2198864e0d30a095b69b26a4))
+
+
+
+# [0.1.0](https://github.com/ghorbani-mohammad/preparing-2/compare/e8290b9781d8b731c7dee590deaa2229a9317f7c...v0.1.0) (2022-07-27)
 
 
 ### Features
