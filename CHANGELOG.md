@@ -1,3 +1,12 @@
+# [0.2.0](https://github.com/ghorbani-mohammad/preparing-2/compare/v0.1.1...v0.2.0) (2022-07-28)
+
+
+### Features
+
+* add product app ([29a9b48](https://github.com/ghorbani-mohammad/preparing-2/commit/29a9b48daac3b9a0d4e57bfc53370aa6d37a7221))
+
+
+
 ## [0.1.1](https://github.com/ghorbani-mohammad/preparing-2/compare/v0.1.0...v0.1.1) (2022-07-28)
 
 
