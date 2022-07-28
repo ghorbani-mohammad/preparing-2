@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/ghorbani-mohammad/preparing-2/compare/v0.2.0...v0.3.0) (2022-07-28)
+
+
+### Features
+
+* add user app ([6d4f50d](https://github.com/ghorbani-mohammad/preparing-2/commit/6d4f50d1cc1da48dcb7eb219d12d54e8668e0573))
+
+
+
 # [0.2.0](https://github.com/ghorbani-mohammad/preparing-2/compare/v0.1.1...v0.2.0) (2022-07-28)
 
 
