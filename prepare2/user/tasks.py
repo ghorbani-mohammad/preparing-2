@@ -10,5 +10,5 @@ def send_email(email):
 
     time.sleep(5)
     return send_mail(
-        subject, message, 'mohammad.ghorbani@hotmail.com', [email], fail_silently=False
+        subject, message, 'michael.ghorb@gmail.com', [email], fail_silently=False
     )
