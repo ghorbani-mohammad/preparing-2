@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/ghorbani-mohammad/preparing-2/compare/v0.3.0...v0.4.0) (2022-08-09)
+
+
+### Features
+
+* add publisher and consumer ([50ad7a7](https://github.com/ghorbani-mohammad/preparing-2/commit/50ad7a73bccac2fa87e2c5ec5eedeb32a9de5204))
+
+
+
 # [0.3.0](https://github.com/ghorbani-mohammad/preparing-2/compare/v0.2.0...v0.3.0) (2022-07-28)
 
 
