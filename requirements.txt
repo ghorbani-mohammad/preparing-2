@@ -2,5 +2,6 @@ celery
 django
 django-environ
 djangorestframework
+pika
 pillow
 redis
